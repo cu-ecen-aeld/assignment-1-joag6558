@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 # Tester script for assignment 1 and assignment 2
 # Author: Siddhant Jajoo
 
@@ -47,7 +47,7 @@ fi
 
 for i in $( seq 1 $NUMFILES)
 do
-	./writer.sh "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+	./writer.sh "$WRITEDIR/${username}$i.txt$" "$WRITESTR"
 done
 
 OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
